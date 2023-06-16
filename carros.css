@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo{
+    margin: 100px 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.carro{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    color: white;
+    border-radius: 10px;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 2px 4px 1px gray;
+    margin-bottom: 15px;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.hide{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding-top: 80px;
+    visibility: hidden;
+}
+
+.hide p{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.carro:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.carro:hover .hide{
+    visibility: visible;
+    background: rgba(0, 0, 0, .5);
+    transition: background 0.8s;
+}
+
+#carro{
+    background-image: url("img/Novo-Onix-Hatch-2020 (116).jpg");
+    background-repeat: no-repeat;
+}
+#carro2{
+    background-image: url("img/hilux.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#carro3{
+    background-image: url("img/Toyota-Corolla-XEi_4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.descr h3{
+    font-size: 25px;
+}
+
+.icon{
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 290px;
+    color: white;
+    font-size: 30px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+}
+
+.price{
+    font-size: 25px;
+}
